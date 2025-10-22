@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+    <!-- criando o cabeçalho de meta dados-->
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>calculadora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <!-- conteúdo visual da página-->
+    <body>
+        
+        <!--criando a calculadora-->
+        <div class ="calculator">
+            <!-- criando o display (tela) da calculadora-->
+            <input type="text" id="display" disabled>
+            <!-- botões da calculadora-->
+            
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendSymbol('/')">÷</button>
+                <button onclick="appendSymbol('*')">x</button>
+                <button onclick="deleteLast()">←</button>
+                <button onclick="appendSymbol('7')">7</button>
+                <button onclick="appendSymbol('8')">8</button>
+                <button onclick="appendSymbol('9')">9</button>
+                <button onclick="appendSymbol('-')">-</button>
+                <button onclick="appendSymbol('4')">4</button>
+                <button onclick="appendSymbol('5')">5</button>
+                <button onclick="appendSymbol('6')">6</button>
+                <button onclick="appendSymbol('+')">+</button>
+                <button onclick="appendSymbol('1')">1</button>
+                <button onclick="appendSymbol('2')">2</button>
+                <button onclick="appendSymbol('3')">3</button>
+                <button onclick="calculate()">=</button>
+                
+                
+                <button onclick="appendSymbol('0')" class="zero">0</button>
+                <button onclick="appendSymbol('.')">.</button>
+                
+            </div>
+            
+        </div>
+    
+        <!-- carregamento do arquivo javasript-->
+        <script src="script.js"></script>
+        
+    </body>
+    
+    
+</html>
